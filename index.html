@@ -1,5 +1,162 @@
-<html>
-  <body>
-    <h1>Política de Privacidad - Impostor: Adivina Dibujando</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Impostor: Adivina Dibujando</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #E91E63;
+            --secondary: #21C3D8;
+            --bg: #F8F9FA;
+            --text: #1A1A1A;
+            --card-bg: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background: var(--card-bg);
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--secondary);
+            border-left: 4px solid var(--secondary);
+            padding-left: 15px;
+            margin-top: 40px;
+            font-weight: 600;
+        }
+
+        p,
+        li {
+            font-size: 1.1rem;
+            color: #4A4A4A;
+        }
+
+        .highlight-card {
+            background: #F1F3F5;
+            padding: 20px;
+            border-radius: 16px;
+            margin: 20px 0;
+        }
+
+        .service-tag {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        .service-tag.blue {
+            background: var(--secondary);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Política de Privacidad</h1>
+            <p><strong>Impostor: Adivina Dibujando</strong></p>
+            <p>Última actualización: 23 de febrero de 2026</p>
+        </header>
+
+        <section>
+            <p>En <strong>Impostor: Adivina Dibujando</strong>, valoramos tu privacidad. Esta política describe qué
+                datos recopilamos y cómo los utilizamos para ofrecerte la mejor experiencia de juego.</p>
+        </section>
+
+        <h2>1. Información que Recopilamos</h2>
+        <div class="highlight-card">
+            <span class="service-tag">Firebase Auth</span>
+            <span class="service-tag">Firestore</span>
+            <p>Nuestra aplicación utiliza servicios de Google Firebase para funcionar correctamente:</p>
+            <ul>
+                <li><strong>Autenticación Anónima:</strong> Creamos una cuenta temporal para que puedas jugar sin
+                    necesidad de introducir correos electrónicos o contraseñas personales.</li>
+                <li><strong>Perfil de Usuario:</strong> Almacenamos tu <em>apodo (nickname)</em> y el <em>emoji</em> de
+                    tu avatar para mostrarlo a otros jugadores durante las partidas.</li>
+                <li><strong>Datos de Juego:</strong> Los trazos que dibujas en el lienzo y los mensajes de juego se
+                    almacenan temporalmente en nuestra base de datos para sincronizarlos con los demás participantes en
+                    tiempo real.</li>
+            </ul>
+        </div>
+
+        <h2>2. Rendimiento y Errores</h2>
+        <div class="highlight-card">
+            <span class="service-tag blue">Crashlytics</span>
+            <p>Utilizamos <strong>Firebase Crashlytics</strong> para monitorizar la estabilidad de la aplicación. Si el
+                juego se cierra inesperadamente, se envía un informe técnico anónimo que incluye:</p>
+            <ul>
+                <li>Modelo del dispositivo y versión del sistema operativo.</li>
+                <li>Punto exacto del código donde ocurrió el error.</li>
+            </ul>
+            <p><em>No se recopila información personal identificable en estos informes.</em></p>
+        </div>
+
+        <h2>3. Almacenamiento Local</h2>
+        <p>Utilizamos almacenamiento local en tu dispositivo (SharedPreferences) para recordar tus preferencias básicas,
+            como tu último apodo utilizado y si ya has visto el tutorial de bienvenida.</p>
+
+        <h2>4. Uso de Audio y Vibración</h2>
+        <p>La aplicación utiliza el sistema de <strong>vibración</strong> y la reproducción de <strong>sonidos</strong>
+            para notificarte cuando es tu turno de juego. Puedes desactivar estas funciones en cualquier momento desde
+            los ajustes de la aplicación.</p>
+
+        <h2>5. Tus Derechos</h2>
+        <p>Al utilizar autenticación anónima, no tenemos forma de vincular tu identidad real con tus datos de juego. Sin
+            embargo, si deseas eliminar todos tus datos almacenados en el dispositivo, simplemente desinstala la
+            aplicación o borra el caché de la misma.</p>
+
+        <h2>6. Contacto</h2>
+        <p>Si tienes cualquier duda sobre esta política de privacidad, puedes contactarnos a través de:</p>
+        <p><strong>bobkyledev@gmail.com</strong></p>
+
+        <footer>
+            <p>&copy; 2026 Impostor: Adivina Dibujando. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+</body>
+
 </html>
